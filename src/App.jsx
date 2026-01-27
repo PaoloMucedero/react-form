@@ -1,21 +1,14 @@
 import { useState } from 'react'
 import './App.css'
 import articles from "./assets/article.js"
-
-
+import ArticlesList from './assets/ArticlesList.jsx'
+import SingleArticle from './assets/SingleArticle.jsx'
 
 
 function App() {
-  console.log(articles)
 
   return(
-    <div className='list-group flex-center'>
-      <article className='list-group-item'>
-        <h3>Titolo articolo</h3>
-        <p>TESTO ARTICOLO</p>
-      </article>
-
-    </div>
+    <ArticlesList />
     
   )
 
