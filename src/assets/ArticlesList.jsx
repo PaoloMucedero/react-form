@@ -5,8 +5,8 @@ const ArticlesList = ({articles}) => {
 
     return (
         <div className='list-group flex-center'>
-            {articles.map(article => (
-                <SingleArticle />
+            {articles.map((article, i) => (
+                <SingleArticle key={article.id} title={article.title} description={article.article} />
             ))}
 
 

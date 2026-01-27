@@ -8,7 +8,7 @@ import SingleArticle from './assets/SingleArticle.jsx'
 function App() {
 
   return(
-    <ArticlesList />
+    <ArticlesList articles={articles} />
     
   )
 

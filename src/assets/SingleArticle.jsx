@@ -1,10 +1,8 @@
-import articles from "./article";
-
-function SingleArticle({ title, article }) {
+function SingleArticle({ title, description }) {
     return (
         <article className='list-group-item'>
-            <h3>{article.title}</h3>
-            <p>{article.article}</p>
+            <h3>{title}</h3>
+            <p>{description}</p>
         </article>
     )
 }
