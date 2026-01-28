@@ -8,10 +8,17 @@ import ToDoList from './assets/ToDoList.jsx'
 
 function App() {
 
+  const [userArticles, setUserArticles] = useState(articles)
+
+  function addNewArticle(newArticle) {
+    const updatedUserArticles = [...userArticles, newArticle];
+    setUserArticles(updatedUserArticles)
+  } 
+
   return(
     <>
-      <ArticlesList articles={articles} />
-      <AddArticleForm />
+      <ArticlesList articles={userArticles} />
+      <AddArticleForm add={addNewArticle} />
       <ToDoList />
     </>
   )
