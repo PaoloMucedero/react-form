@@ -4,7 +4,7 @@ import articles from "./assets/article.js"
 import ArticlesList from './assets/ArticlesList.jsx'
 import SingleArticle from './assets/SingleArticle.jsx'
 import AddArticleForm from './assets/AddArticleForm.jsx'
-
+import ToDoList from './assets/ToDoList.jsx'
 
 function App() {
 
@@ -12,6 +12,7 @@ function App() {
     <>
       <ArticlesList articles={articles} />
       <AddArticleForm />
+      <ToDoList />
     </>
   )
 
